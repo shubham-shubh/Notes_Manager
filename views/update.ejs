@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%- include("partials/header"); -%>
+    <h1 style="margin-left: 10px;"><%= key %></h1>
+    <form action="/blogging/update" method="post">
+    <h4 style="margin-left: 10px;">Title</h4>
+    <input type="text" name="update" value="" style="margin-bottom: 5px;margin-left: 10px;"><br>
+    <button class="button-10" role="button" style="margin-left: 10px;">Submit</button>
+    </form>
+    <%- include("partials/footer"); -%>
+  </body>
+</html>

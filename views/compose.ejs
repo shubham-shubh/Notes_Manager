@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/button.css">
+  </head>
+  <body>
+  <%- include("partials/header");-%>
+  <h1 style="margin-left: 10px;"><%= key %></h1>
+  <form action="/blogging/compose" method="post">
+  <h4 style="margin-left: 10px;">Title</h4>
+  <input type="text" name="title" value="" style="margin-left: 10px;">
+  <h4 style="margin-left: 10px;">Post</h4>
+  <textarea name="info" rows="4" cols="80" style="margin-left: 10px;"></textarea><br>
+  <button class="button-10" role="button" style="margin-left: 10px;">Submit</button>
+  </form>
+  <%- include("partials/footer");-%>
+  </body>
+</html>

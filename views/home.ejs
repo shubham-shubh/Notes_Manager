@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <%- include("partials/header");-%>
+  <h1 style="margin-left: 10px;"><%=key%></h1>
+  <p style="font-size: 15px ;margin-left: 10px;"><%=content%></p>
+  <% important.forEach(function(impo){ %>
+  <h3 style="margin-left: 10px;"><%= impo.title %></h3>
+  <p style="margin-left: 10px;"><%= impo.content.substring(0,99) %>...<a href="/blogging/<%=impo.title%>">Read More</a> </p>
+  <%});%>
+  <%- include("partials/footer");-%>
+  </body>
+</html>
